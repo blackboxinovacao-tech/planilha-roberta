@@ -62,6 +62,8 @@ HETZNER_SSH_KEY=<private key, nao registrar em arquivo>
 
 ## GitHub Actions
 
+> **Atualização (2026-10-20):** o job `deploy` foi removido de `.github/workflows/ci.yml` (falhava por falta dos segredos `HETZNER_*` e criaria uma instância paralela à que o Arcane gerencia). O CI agora só roda checks e o build Docker. O fluxo abaixo é histórico e já não vale para este projeto.
+
 Fluxo usado:
 
 1. Rodar checks/testes.
